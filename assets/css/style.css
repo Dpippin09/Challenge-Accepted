@@ -99,6 +99,9 @@ nav {
     color: #ffffff;
 }
 
+h2 {
+    text-decoration: underline;
+}
 
 a { color: #ffffff;
     text-decoration: none;
