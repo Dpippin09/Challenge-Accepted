@@ -5,14 +5,14 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #faedcd;
 }
 
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
-    color: #ffffff;
+    color: #dde5b6;
 }
 
 .header h1 {
@@ -50,109 +50,53 @@ p {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/newMainImage.png");
+    background-image: url("../images/NewOpeningImage.png");
     background-size: cover;
     background-position: center;
 }
+nav {
+    display: flex;
+    justify-content: flex-end; /* Aligns the nav-links container to the right */
+    padding: 10px 20px;
+    background-color: #588157;
+    color: #fff;
+    position: fixed;
+    width: 100%; /* Ensures the nav container takes the full width */
+    top: 0; /* Fixes the nav to the top of the page */
+}
 
 .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #fff;
-    position: absolute;
-    top: 60px; /* Adjust based on your header height */
-    right: 10px;
-    width: 200px; /* Adjust as needed */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+    list-style: none; /* Removes the default list styling */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
 }
 
 .nav-links a {
-    padding: 10px;
+    color: #fff;
     text-decoration: none;
-    color: #000;
-    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.ham-menu {
-    height: 50px;
-    width: 50px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+.nav-links a:hover {
+    background-color: #555;
 }
 
-.ham-menu span {
-    height: 5px;
-    width: 100%;
-    background-color: rgb(65, 65, 65);
-    border-radius: 25px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    transition: .3s ease;
+.nav-links .login-signup {
+    background-color: #3a5a40;
 }
 
-.ham-menu span:nth-child(1) {
-    top: 25%;
+.nav-links .login-signup:hover {
+    background-color: #555;
 }
 
-.ham-menu span:nth-child(2) {
-    top: 50%;
-}
-
-.ham-menu span:nth-child(3) {
-    top: 75%;
-}
-
-.hamMenu.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-.hamMenu.active span:nth-child(2) {
-    opacity: 0;
-}
-.hamMenu.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.nav-links.active {
-    display: flex;
-} 
-
-.offScreenMenu {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 300px;
-    height: 100%;
-    background-color: #333;
-    transition: 0.4s;
-    z-index: 999;
-    padding-top: 60px;
-}
-.offScreenMenu.active {
-    right: 0;
-}
-.offScreenMenu a {
-    display: block;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    border-bottom: 1px solid #444;
-}
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5);
-    display: none;
-    z-index: 998;
-}
-.overlay.active {
-    display: block;
-}
 
 a { color: #ffffff;
     text-decoration: none;
@@ -172,7 +116,7 @@ a { color: #ffffff;
 
 
 
-.search-engine-optimization {
+.about-Us {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -181,7 +125,7 @@ a { color: #ffffff;
     color: #ffffff;
 }
 
-.online-reputation-management {
+.soil-health {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -190,7 +134,16 @@ a { color: #ffffff;
     color: #ffffff;
 }
 
-.social-media-marketing {
+.Projects {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #aec3b0;
+    color: #ffffff;
+}
+
+.our-farms {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -199,31 +152,85 @@ a { color: #ffffff;
     color: #ffffff;
 }
 
-.search-engine-optimization img {
+.about-Us img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
+.soil-health img {
     max-height: 200px;
 }
 
-.social-media-marketing img {
+.Projects img {
     max-height: 200px;
 }
 
-.search-engine-optimization h2 {
+.our-farms img {
+    max-height: 200px;
+}
+
+.about-Us h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
+.soil-health h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.social-media-marketing h2 {
+.Projects h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+.our-farms h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+/* Contact section styles */
+.contact {
+    padding: 20px;
+    background-color: #d4a373;
+    border-radius: 5px;
+}
+
+.contact h2 {
+    margin-top: 0;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #a7a7a7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #52796f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #344e41;
 }
 
 /* Media queries for mobile compatibility */
