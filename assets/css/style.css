@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #faedcd;
+    background-color: #e3d5ca;
 }
 
 .header {
@@ -58,8 +58,8 @@ nav {
     display: flex;
     justify-content: flex-end; /* Aligns the nav-links container to the right */
     padding: 10px 20px;
-    background-color: #588157;
-    color: #fff;
+    background-color: #ccc5b9;
+    color: #9c9c9c;
     position: fixed;
     width: 100%; /* Ensures the nav container takes the full width */
     top: 0; /* Fixes the nav to the top of the page */
@@ -78,7 +78,7 @@ nav {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -86,20 +86,27 @@ nav {
 }
 
 .nav-links a:hover {
-    background-color: #555;
+    background-color: #797979;
 }
 
 .nav-links .login-signup {
-    background-color: #3a5a40;
+    background-color: #386641;
+    color: #ffffff;
 }
 
 .nav-links .login-signup:hover {
     background-color: #555;
+    color: #ffffff;
 }
 
 
 a { color: #ffffff;
     text-decoration: none;
+}
+
+p {
+    font-size: 20px; /* Change this value to your desired font size */
+    line-height: 2; /* Optional: Adjust the line height for better readability */
 }
 
 
@@ -119,8 +126,9 @@ a { color: #ffffff;
 .about-Us {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 600px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-size-adjust: 100%;
     background-color: #aec3b0;
     color: #ffffff;
 }
@@ -128,7 +136,7 @@ a { color: #ffffff;
 .soil-health {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 600px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #588157;
     color: #ffffff;
@@ -137,7 +145,7 @@ a { color: #ffffff;
 .Projects {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 600px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #aec3b0;
     color: #ffffff;
@@ -146,7 +154,7 @@ a { color: #ffffff;
 .our-farms {
     margin-bottom: 20px;
     padding: 50px;
-    height: 300px;
+    height: 600px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #588157;
     color: #ffffff;
